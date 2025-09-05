@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Favorites",
+  "version": "1.0",
+  "description": "Adiciona funcionalidade de favoritar chats do ChatGPT",
+
+  "permissions": ["storage", "activeTab"],
+
+  "host_permissions": ["https://chatgpt.com/*"],
+
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+
+  "action": {
+    "default_title": "ChatGPT Favorites"
+  },
+
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
