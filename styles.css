@@ -1,0 +1,121 @@
+.favorites-container {
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.favorite-content {
+  padding: 10px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.favorite-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.favorite-card:hover {
+  background: #212121;
+}
+
+.favorite-actions button,
+.favorite-actions a {
+  margin-left: 4px;
+  font-size: 12px;
+}
+
+.favorite-label {
+  color: #afafaf;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.favorite-title {
+  color: #ffffff;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
+.favorite-dropdown {
+  margin-bottom: 5px;
+  position: relative;
+}
+.favorite-dropdown-btn {
+  width: 100%;
+  text-align: left;
+  padding: 5px 8px;
+  cursor: pointer;
+}
+.favorite-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #212121;
+  border-radius: 8px;
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+.favorite-dropdown-menu a,
+.favorite-dropdown-menu button {
+  display: block;
+  width: 100%;
+  padding: 5px 8px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.favorite-dropdown-menu button:hover,
+.favorite-dropdown-menu a:hover {
+  background-color: #2f2f2f;
+}
+
+.favorite-button {
+  color: yellow;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+
+.favorites-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-20px);
+  z-index: 9999;
+}
+
+.favorites-notification.show {
+  opacity: 1;
+  transform: translateY(0);
+}
